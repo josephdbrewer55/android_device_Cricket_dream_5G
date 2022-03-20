@@ -42,7 +42,7 @@ after_success:
   - cp $HOME/twrp/out/target/product/dream5g/recovery.img $HOME/twrp/TWRP-$version-dream5g-$(date +"%Y%m%d")-Unofficial.img
   - cd $HOME/twrp/
   # Optional: You might need to switch from https://transfer.sh to https://file.io
-  # - curl -s --upload-file TWRP-$version-$$DEVICE$$-$(date +"%Y%m%d")-Unofficial.img https://transfer.sh/ && echo ""
+  - curl -s --upload-file TWRP-$version-$$DEVICE$$-$(date +"%Y%m%d")-Unofficial.img https://transfer.sh/ && echo ""
 deploy:
   skip_cleanup: true
   provider: releases
